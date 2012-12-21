@@ -121,8 +121,8 @@ bindsym $mod+Control+bracketleft  exec --no-startup-id i3-swap-workspace "["
 bindsym $mod+Control+bracketright exec --no-startup-id i3-swap-workspace "]"
 bindsym $mod+Control+backslash    exec --no-startup-id i3-swap-workspace \
 
-bindsym $mod+z workspace prev_on_output
-bindsym $mod+x workspace next_on_output
+bindsym $mod+z workspace prev
+bindsym $mod+x workspace next
 bindsym $mod+q workspace back_and_forth
 
 bindsym $mod+p exec --no-startup-id i3-input -F 'rename workspace to "%s"' -P 'New name: '
