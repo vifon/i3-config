@@ -147,6 +147,8 @@ bindsym $mod+Shift+backslash    move container to workspace \
 bindsym $mod+Shift+equal move scratchpad
 bindsym $mod+equal       scratchpad show
 
+bindsym $mod+Shift+s move workspace to output right
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
