@@ -125,6 +125,7 @@ bindsym $mod+Control+backslash    exec --no-startup-id i3-swap-workspace \
 bindsym $mod+z workspace prev
 bindsym $mod+x workspace next
 bindsym $mod+q workspace back_and_forth
+bindsym $mod+w exec --no-startup-id i3-msg workspace "`i3-find-empty-ws --random`"
 
 bindsym $mod+p exec --no-startup-id i3-input -F 'rename workspace to "%s"' -P 'New name: '
 
@@ -144,6 +145,8 @@ bindsym $mod+Shift+apostrophe   move container to workspace "'"
 bindsym $mod+Shift+bracketleft  move container to workspace "["
 bindsym $mod+Shift+bracketright move container to workspace "]"
 bindsym $mod+Shift+backslash    move container to workspace \
+
+bindsym $mod+Shift+w exec --no-startup-id i3-msg move container to workspace "`i3-find-empty-ws --random`"
 
 bindsym $mod+Shift+equal move scratchpad
 bindsym $mod+equal       scratchpad show

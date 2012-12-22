@@ -1,0 +1,36 @@
+#!/usr/bin/env perl
+
+use warnings;
+use strict;
+
+use JSON::XS;
+use List::Util 'first';
+
+# generate a N character long random string
+sub rand_string {
+    my $string;
+    $string .= ("A".."Z","a".."z")[rand 26*2] for 1..$_[0];
+    return $string;
+}
+
+my @possible_workspaces = qw( 1 2 3 4 5 6 7 8 9 10 );
+my @occupied_workspaces = map
+                            {$_->{name}}
+                            @{decode_json `i3-msg -t get_workspaces`};
+
+my $empty_workspace = first
+                        { my $ws = $_;
+                          not grep { $ws eq $_ }
+                                   @occupied_workspaces }
+                        @possible_workspaces;
+
+# if there is no empty workspace in the possible workspace list
+if (not defined $empty_workspace) {
+    if (defined $ARGV[0] && $ARGV[0] eq "--random") {
+        $empty_workspace = rand_string(5)
+    } else {
+        exit 1
+    }
+}
+
+print $empty_workspace . "\n"
