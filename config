@@ -106,21 +106,21 @@ bindsym $mod+bracketleft  workspace "["
 bindsym $mod+bracketright workspace "]"
 bindsym $mod+backslash    workspace \
 
-bindsym $mod+Control+1            exec --no-startup-id i3-swap-workspace 1
-bindsym $mod+Control+2            exec --no-startup-id i3-swap-workspace 2
-bindsym $mod+Control+3            exec --no-startup-id i3-swap-workspace 3
-bindsym $mod+Control+4            exec --no-startup-id i3-swap-workspace 4
-bindsym $mod+Control+5            exec --no-startup-id i3-swap-workspace 5
-bindsym $mod+Control+6            exec --no-startup-id i3-swap-workspace 6
-bindsym $mod+Control+7            exec --no-startup-id i3-swap-workspace 7
-bindsym $mod+Control+8            exec --no-startup-id i3-swap-workspace 8
-bindsym $mod+Control+9            exec --no-startup-id i3-swap-workspace 9
-bindsym $mod+Control+0            exec --no-startup-id i3-swap-workspace 10
-bindsym $mod+Control+semicolon    exec --no-startup-id i3-swap-workspace ";"
-bindsym $mod+Control+apostrophe   exec --no-startup-id i3-swap-workspace "'"
-bindsym $mod+Control+bracketleft  exec --no-startup-id i3-swap-workspace "["
-bindsym $mod+Control+bracketright exec --no-startup-id i3-swap-workspace "]"
-bindsym $mod+Control+backslash    exec --no-startup-id i3-swap-workspace \
+bindsym $mod+Control+1            exec --no-startup-id i3-swap-ws 1
+bindsym $mod+Control+2            exec --no-startup-id i3-swap-ws 2
+bindsym $mod+Control+3            exec --no-startup-id i3-swap-ws 3
+bindsym $mod+Control+4            exec --no-startup-id i3-swap-ws 4
+bindsym $mod+Control+5            exec --no-startup-id i3-swap-ws 5
+bindsym $mod+Control+6            exec --no-startup-id i3-swap-ws 6
+bindsym $mod+Control+7            exec --no-startup-id i3-swap-ws 7
+bindsym $mod+Control+8            exec --no-startup-id i3-swap-ws 8
+bindsym $mod+Control+9            exec --no-startup-id i3-swap-ws 9
+bindsym $mod+Control+0            exec --no-startup-id i3-swap-ws 10
+bindsym $mod+Control+semicolon    exec --no-startup-id i3-swap-ws ";"
+bindsym $mod+Control+apostrophe   exec --no-startup-id i3-swap-ws "'"
+bindsym $mod+Control+bracketleft  exec --no-startup-id i3-swap-ws "["
+bindsym $mod+Control+bracketright exec --no-startup-id i3-swap-ws "]"
+bindsym $mod+Control+backslash    exec --no-startup-id i3-swap-ws \
 
 bindsym $mod+z workspace prev
 bindsym $mod+x workspace next

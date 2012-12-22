@@ -1,0 +1,26 @@
+#!/usr/bin/env perl
+
+use warnings;
+use strict;
+
+use JSON::XS;
+
+die if not defined $ARGV[0];
+
+my $target = shift;
+
+my $workspaces = decode_json(`i3-msg -t get_workspaces`);
+
+my $focused;
+for my $workspace (@$workspaces) {
+    if ($workspace->{focused}) {
+        $focused = $workspace->{name};
+        last;
+    }
+}
+
+die if not defined $focused;
+
+exec("i3-msg 'rename workspace $target    to VIFON_TEMP;
+              rename workspace $focused   to $target;
+              rename workspace VIFON_TEMP to $focused'");
