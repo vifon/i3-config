@@ -196,8 +196,9 @@ bindsym $mod+Control+r mode "resize"
 # window rules
 for_window [class="^Gitk$"]                        floating enable
 for_window [title="^ncmpcpp-run$" class="^URxvt$"] floating enable
-for_window [title="^alsamixer$" class="^URxvt$"]   floating enable
+for_window [title="^alsamixer$"   class="^URxvt$"] floating enable
 for_window [title="^xzoom x"]                      floating enable
+for_window [class="^Xfce4-notifyd$"]               floating enable
 
 
 # application launcher
