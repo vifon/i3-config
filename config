@@ -110,6 +110,17 @@ bindsym $mod+bracketleft  workspace "["
 bindsym $mod+bracketright workspace "]"
 bindsym $mod+backslash    workspace \
 
+bindsym $mod+Mod5+1 exec --no-startup-id i3-nth-ws 1  --switch
+bindsym $mod+Mod5+2 exec --no-startup-id i3-nth-ws 2  --switch
+bindsym $mod+Mod5+3 exec --no-startup-id i3-nth-ws 3  --switch
+bindsym $mod+Mod5+4 exec --no-startup-id i3-nth-ws 4  --switch
+bindsym $mod+Mod5+5 exec --no-startup-id i3-nth-ws 5  --switch
+bindsym $mod+Mod5+6 exec --no-startup-id i3-nth-ws 6  --switch
+bindsym $mod+Mod5+7 exec --no-startup-id i3-nth-ws 7  --switch
+bindsym $mod+Mod5+8 exec --no-startup-id i3-nth-ws 8  --switch
+bindsym $mod+Mod5+9 exec --no-startup-id i3-nth-ws 9  --switch
+bindsym $mod+Mod5+0 exec --no-startup-id i3-nth-ws 10 --switch
+
 bindsym $mod+Control+1            exec --no-startup-id i3-swap-ws 1
 bindsym $mod+Control+2            exec --no-startup-id i3-swap-ws 2
 bindsym $mod+Control+3            exec --no-startup-id i3-swap-ws 3

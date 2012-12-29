@@ -13,35 +13,32 @@ use JSON::XS;
 
 die if not defined $ARGV[0];
 
-my $target = shift;
+my @workspaces = map
+                   {$_->{name}}
+                   @{decode_json `i3-msg -t get_workspaces`};
 
-my $workspaces = decode_json(`i3-msg -t get_workspaces`);
+my $nth_workspace = $workspaces[$ARGV[0]-1];
 
-my $focused;
-for my $workspace (@$workspaces) {
-    if ($workspace->{focused}) {
-        $focused = $workspace->{name};
-        last;
-    }
+die if not defined $nth_workspace;
+
+print $nth_workspace . "\n";
+
+if (defined $ARGV[1] && $ARGV[1] eq "--switch") {
+    exec("i3-msg 'workspace \"$nth_workspace\"'")
 }
-
-die if not defined $focused;
-
-exec("i3-msg 'rename workspace $target    to VIFON_TEMP;
-              rename workspace $focused   to $target;
-              rename workspace VIFON_TEMP to $focused'");
 
 =head1 NAME
 
-i3-swap-ws - swap workspace
+i3-nth-ws - focus nth workspace
 
 =head1 SYNOPSIS
 
-B<i3-swap-ws> I<workspace_name>
+B<i3-nth-ws> I<n> [I<--switch>]
 
 =head1 DESCRIPTION
 
-Swap the current workspace with I<workspace_name>.
+Print to stdout the name of the I<n>th workspace, regardless of its name. If
+given I<--switch>, actually focus that workspace.
 
 =head1 SEE ALSO
 
