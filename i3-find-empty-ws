@@ -20,8 +20,8 @@ my @occupied_workspaces = map
 
 my $empty_workspace = first
                         { my $ws = $_;
-                          not grep { $ws eq $_ }
-                                   @occupied_workspaces }
+                          not first { $ws eq $_ }
+                                    @occupied_workspaces }
                         @possible_workspaces;
 
 # if there is no empty workspace in the possible workspace list
