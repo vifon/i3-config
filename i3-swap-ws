@@ -9,22 +9,16 @@ unless (@ARGV == 0) {
                                  or $ARGV[0] eq "-h";
 }
 
-use JSON::XS;
+use lib "$ENV{HOME}/.i3";
+use i3;
 
 die if not defined $ARGV[0];
 
+my $i3 = new i3;
+
 my $target = shift;
 
-my $workspaces = decode_json(`i3-msg -t get_workspaces`);
-
-my $focused;
-for my $workspace (@$workspaces) {
-    if ($workspace->{focused}) {
-        $focused = $workspace->{name};
-        last;
-    }
-}
-
+my $focused = $i3->current_workspace->{name};
 die if not defined $focused;
 
 exec("i3-msg 'rename workspace $target    to VIFON_TEMP;

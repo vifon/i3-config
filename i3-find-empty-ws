@@ -9,8 +9,10 @@ unless (@ARGV == 0) {
                                  or $ARGV[0] eq "-h";
 }
 
-use JSON::XS;
 use List::Util 'first';
+
+use lib "$ENV{HOME}/.i3";
+use i3;
 
 # generate a N character long random string
 sub rand_string {
@@ -19,10 +21,10 @@ sub rand_string {
     return $string;
 }
 
+my $i3 = new i3;
+
 my @possible_workspaces = ("1".."10");
-my @occupied_workspaces = map
-                            {$_->{name}}
-                            @{decode_json `i3-msg -t get_workspaces`};
+my @occupied_workspaces = $i3->workspaces;
 
 my $empty_workspace = first                       # find the first workspace in the list
                         { my $ws = $_;            #
