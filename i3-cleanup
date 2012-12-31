@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd /tmp
-ls -td i3-$USER* | tail -n +2 | xargs rm -rv
+ls -td i3-$USER* | tail -n +2 | xargs rm -rfv
