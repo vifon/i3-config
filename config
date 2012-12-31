@@ -82,6 +82,9 @@ bindsym $mod+s layout stacking
 bindsym $mod+c layout tabbed
 bindsym $mod+d layout toggle split
 
+bindsym $mod+b       border 1pixel
+bindsym $mod+Shift+b border normal
+
 # toggle tiling / floating
 bindsym $mod+Shift+Return floating toggle
 
