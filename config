@@ -214,11 +214,15 @@ bindsym $mod+Control+l resize grow   width  20 px or 5 ppt
 
 
 # window rules
-for_window [class="^Gitk$"]                        floating enable
-for_window [title="^ncmpcpp-run$" class="^URxvt$"] floating enable
-for_window [title="^alsamixer$"   class="^URxvt$"] floating enable
-for_window [title="^xzoom x"]                      floating enable
-for_window [class="^Xfce4-notifyd$"]               floating enable
+for_window [class="^Gitk$"                                      ] floating enable
+for_window [class="^URxvt$"    title="^ncmpcpp-run$"            ] floating enable
+for_window [class="^URxvt$"    title="^alsamixer$"              ] floating enable
+for_window [                   title="^xzoom x"                 ] floating enable
+for_window [class="^Xfce4-notifyd$"                             ] floating enable
+for_window [class="^Rox$"                                       ] floating enable
+for_window [class="^redeclipse$"                                ] floating enable
+for_window [class="^Chromium$" title="^MightyText Quick Reply$" ] floating enable
+for_window [class="^XDvi"                                       ] floating enable
 
 
 # application launcher
