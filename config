@@ -234,7 +234,7 @@ bindsym $mod+F8      exec claws-mail
 # finds out, if available)
 bar {
     status_command i3status
-    position bottom
+    position top
     # mode hide
     modifier $mod
     tray_output primary
