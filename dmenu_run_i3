@@ -1,0 +1,2 @@
+#!/bin/sh
+exe=`dmenu_path | dmenu ${1+"$@"}` && exec i3-msg "exec $exe"
