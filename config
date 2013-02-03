@@ -48,7 +48,6 @@ bindsym $mod+l focus right
 # bindsym $mod+Up    focus up
 # bindsym $mod+Right focus right
 
-bindsym $mod+u   [urgent=newest] focus
 bindsym $mod+Tab [urgent=newest] focus
 
 # move focused window
