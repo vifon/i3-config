@@ -240,3 +240,6 @@ bar {
         urgent_workspace #ffffff #ff0000
     }
 }
+
+
+exec urxvtc
