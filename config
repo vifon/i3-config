@@ -51,10 +51,6 @@ bindsym $mod+l focus right
 bindsym $mod+u   [urgent=newest] focus
 bindsym $mod+Tab [urgent=newest] focus
 
-# window marks
-bindsym $mod+n exec --no-startup-id i3-input -F 'mark %s' -l 1 -P 'Mark: '
-bindsym $mod+m exec --no-startup-id i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Go to: '
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
