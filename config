@@ -223,6 +223,8 @@ for_window [class="^redeclipse$"                                ] floating enabl
 for_window [class="^Chromium$" title="^MightyText Quick Reply$" ] floating enable
 for_window [class="^XDvi"                                       ] floating enable
 
+assign [class="^Steam$"] → steam
+
 
 # application launcher
 bindsym $mod+Shift+o exec chromium
