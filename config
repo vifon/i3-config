@@ -149,7 +149,9 @@ bindsym $mod+x workspace next
 bindsym $mod+q workspace back_and_forth
 bindsym $mod+w exec --no-startup-id i3-msg workspace "`i3-find-empty-ws --random`"
 
-bindsym $mod+p exec --no-startup-id i3-input -F 'rename workspace to "%s"' -P 'New name: '
+bindsym $mod+p exec         --no-startup-id i3-input -F 'rename workspace to "%s"'         -P 'Rename to: '
+bindsym $mod+Shift+p exec   --no-startup-id i3-input -F 'move container to workspace "%s"' -P 'Move to: '
+bindsym $mod+Control+p exec --no-startup-id i3-input -F 'workspace "%s"'                   -P 'Switch to: '
 bindsym $mod+i exec --no-startup-id i3-select-ws -l 16 -nb "#4A2600" -nf "#FFA74B" | xargs i3-msg workspace
 
 # move focused container to workspace
