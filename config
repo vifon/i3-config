@@ -224,6 +224,7 @@ bindsym $mod+Control+l resize grow   width  20 px or 5 ppt
 for_window [class="^Gitk$"                                      ] floating enable
 for_window [class="^URxvt$"    title="^ncmpcpp-run$"            ] floating enable
 for_window [class="^URxvt$"    title="^alsamixer$"              ] floating enable
+for_window [class="^URxvt$"    title="^battery-control$"        ] floating enable
 for_window [                   title="^xzoom x"                 ] floating enable
 for_window [class="^Xfce4-notifyd$"                             ] floating enable
 for_window [class="^Xfce4-notifyd$"                             ] border none
