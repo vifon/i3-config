@@ -1,5 +1,3 @@
-#!/usr/bin/env perl
-
 =head1 i3
 
 i3wm Perl interface
