@@ -34,7 +34,8 @@ floating_modifier $mod
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+r exec --no-startup-id dmenu_run_i3 -l 16 -nb "#4A2600" -nf "#FFA74B"
+bindsym $mod+r exec --no-startup-id dmenu_run -l 16 -nb "#4A2600" -nf "#FFA74B"
+bindsym $mod+Control+r exec --no-startup-id dmenu_run_i3 -l 16 -nb "#4A2600" -nf "#FFA74B"
 
 # change focus
 bindsym $mod+h focus left
