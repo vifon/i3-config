@@ -1,0 +1,10 @@
+#!/bin/sh
+
+i3-msg 'split v' > /dev/null &&
+urxvtc           > /dev/null &&
+i3-msg 'resize shrink height 60 px or 15 ppt ;
+        split h                              ;
+        focus up                             ;
+        split h                              ;
+        layout tabbed                        ;
+        focus down ' > /dev/null
