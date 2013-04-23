@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd /tmp
-ls -td i3-$USER* | tail -n +2 | xargs rm -rfv
+cd /run/user/$UID/i3/
+ls -td ipc-socket* | tail -n +2 | xargs rm -rfv
