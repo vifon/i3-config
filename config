@@ -128,6 +128,7 @@ bindsym $mod+F3 exec --no-startup-id i3-nth-ws 3 --switch
 bindsym $mod+F4 exec --no-startup-id i3-nth-ws 4 --switch
 bindsym $mod+F5 exec --no-startup-id i3-nth-ws 5 --switch
 bindsym $mod+F6 exec --no-startup-id i3-nth-ws 6 --switch
+bindsym $mod+F7 exec --no-startup-id i3-nth-ws 7 --switch
 
 bindsym $mod+Control+1            exec --no-startup-id i3-swap-ws 1
 bindsym $mod+Control+2            exec --no-startup-id i3-swap-ws 2
