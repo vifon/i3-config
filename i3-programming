@@ -1,10 +1,17 @@
 #!/bin/sh
 
-i3-msg 'split v' > /dev/null &&
-urxvtc           > /dev/null &&
-i3-msg 'resize shrink height 60 px or 15 ppt ;
+# Run within a stack container with two windows, with the lower one focused.
+#
+# Creates a large tabbed container with the first window in it and a small
+# vertically-split container below with the previously focused one.
+
+i3-msg 'focus up                             ;
+        split v                              ;
+        focus down                           ;
+        move up                              ;
+        resize shrink height 60 px or 15 ppt ;
         split h                              ;
         focus up                             ;
         split h                              ;
         layout tabbed                        ;
-        focus down ' > /dev/null
+        focus down' > /dev/null
