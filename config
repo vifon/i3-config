@@ -191,10 +191,15 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 
-bindsym $mod+Control+h resize shrink width  20 px or 5 ppt
-bindsym $mod+Control+j resize grow   height 20 px or 5 ppt
-bindsym $mod+Control+k resize shrink height 20 px or 5 ppt
-bindsym $mod+Control+l resize grow   width  20 px or 5 ppt
+bindsym $mod+Control+h resize grow left  20 px or 5 ppt
+bindsym $mod+Control+j resize grow down  20 px or 5 ppt
+bindsym $mod+Control+k resize grow up    20 px or 5 ppt
+bindsym $mod+Control+l resize grow right 20 px or 5 ppt
+
+bindsym $mod+Mod5+h resize shrink right 20 px or 5 ppt
+bindsym $mod+Mod5+j resize shrink up    20 px or 5 ppt
+bindsym $mod+Mod5+k resize shrink down  20 px or 5 ppt
+bindsym $mod+Mod5+l resize shrink left  20 px or 5 ppt
 
 
 
