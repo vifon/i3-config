@@ -221,7 +221,7 @@ assign [class="^Steam$"] → steam
 
 # application launcher
 bindsym $mod+Shift+o exec chromium
-bindsym $mod+F8      exec claws-mail
+bindsym $mod+F8      exec thunderbird
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
