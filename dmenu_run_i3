@@ -1,2 +1,9 @@
 #!/bin/sh
-exe=`dmenu_path | dmenu ${1+"$@"}` && exec i3-msg "exec $exe"
+
+if command -v dmenu_path &> /dev/null; then
+    exe=`dmenu_path | dmenu ${1+"$@"}` && exec i3-msg "exec $exe"
+else
+    IFS="
+"
+    exe=`dmenu ${1+"$@"} < $HOME/.PATH-cache` && exec i3-msg "exec $exe"
+fi
