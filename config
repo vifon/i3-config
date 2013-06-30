@@ -153,7 +153,7 @@ bindsym $mod+w exec --no-startup-id i3-msg workspace "`i3-find-empty-ws --random
 
 bindsym $mod+p         exec --no-startup-id i3-msg rename workspace to         "`i3-select-ws -nb \#330000 -nf \#E30000 -sb \#660000 -sf \#FF0000`"
 bindsym $mod+Shift+p   exec --no-startup-id i3-msg move container to workspace "`i3-select-ws -nb \#003300 -nf \#00E300 -sb \#006600 -sf \#00FF00`"
-bindsym $mod+Control+p exec --no-startup-id i3-msg workspace                   "`i3-select-ws -nb \#14006A -nf \#0000FF -sb \#06007E -sf \#0000FF`"
+bindsym $mod+Control+p exec --no-startup-id i3-msg workspace                   "`i3-select-ws -nb \#04002A -nf \#0000FF -sb \#06007E -sf \#3333FF`"
 bindsym $mod+i exec --no-startup-id i3-select-ws -l 16 -nb "#4A2600" -nf "#FFA74B" | xargs i3-msg workspace
 
 # move focused container to workspace
