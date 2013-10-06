@@ -10,6 +10,7 @@ unless (@ARGV == 0) {
 }
 
 use List::Util 'first';
+use List::MoreUtils 'after';
 
 use lib "$ENV{HOME}/.i3";
 use i3;
@@ -23,7 +24,8 @@ sub rand_string {
 
 my $i3 = new i3;
 
-my @possible_workspaces = ("1".."10");
+my $current_workspace = $i3->current_workspace->{name};
+my @possible_workspaces = after { $_ eq $current_workspace } "1".."10";
 my @occupied_workspaces = $i3->workspaces;
 
 my $empty_workspace = first                       # find the first workspace in the list
