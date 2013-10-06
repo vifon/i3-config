@@ -220,9 +220,10 @@ assign [class="^Steam$"] → steam
 
 
 # application launcher
-bindsym $mod+Shift+o   exec chromium
-bindsym $mod+Control+o exec chromium --incognito
-bindsym $mod+F8        exec thunderbird
+bindsym $mod+Shift+o         exec chromium
+bindsym $mod+Control+o       exec chromium --incognito
+bindsym $mod+Shift+Control+o exec luakit
+bindsym $mod+F8              exec thunderbird
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
