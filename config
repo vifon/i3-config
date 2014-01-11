@@ -109,7 +109,6 @@ bindsym $mod+semicolon    workspace ";"
 bindsym $mod+apostrophe   workspace "'"
 bindsym $mod+bracketleft  workspace "["
 bindsym $mod+bracketright workspace "]"
-bindsym $mod+backslash    workspace \
 
 bindsym $mod+Mod5+1 exec --no-startup-id i3-nth-ws 1  --switch
 bindsym $mod+Mod5+2 exec --no-startup-id i3-nth-ws 2  --switch
@@ -144,7 +143,6 @@ bindsym $mod+Control+semicolon    exec --no-startup-id i3-swap-ws ";"
 bindsym $mod+Control+apostrophe   exec --no-startup-id i3-swap-ws "'"
 bindsym $mod+Control+bracketleft  exec --no-startup-id i3-swap-ws "["
 bindsym $mod+Control+bracketright exec --no-startup-id i3-swap-ws "]"
-bindsym $mod+Control+backslash    exec --no-startup-id i3-swap-ws \
 
 bindsym $mod+z workspace prev
 bindsym $mod+x workspace next
@@ -171,7 +169,6 @@ bindsym $mod+Shift+semicolon    move container to workspace ";"
 bindsym $mod+Shift+apostrophe   move container to workspace "'"
 bindsym $mod+Shift+bracketleft  move container to workspace "["
 bindsym $mod+Shift+bracketright move container to workspace "]"
-bindsym $mod+Shift+backslash    move container to workspace \
 
 bindsym $mod+Shift+w exec --no-startup-id i3-msg move container to workspace "`i3-find-empty-ws --random`"
 
