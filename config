@@ -179,6 +179,8 @@ bindsym $mod+Shift+s move workspace to output right
 
 bindsym $mod+Shift+n exec --no-startup-id i3-programming
 
+bindsym $mod+n exec python ~/.i3/quickswitch-for-i3/quickswitch.py
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
