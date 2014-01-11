@@ -230,6 +230,7 @@ bar {
     # mode hide
     modifier $mod
     tray_output primary
+    workspace_buttons yes
     colors {
         background       #111111
         urgent_workspace #ffffff #ff0000
