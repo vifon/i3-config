@@ -1,23 +1,23 @@
 #!/bin/sh
 
-# Run within a stack container with two windows, with the lower one focused.
+# Run within a default container with two windows, with the lower one focused.
 #
 # Creates a large tabbed container with the first window in it and a small
 # vertically-split container below with the previously focused one.
 #
 #
 #
-#   +---------------------------------+
-#   |1,2 stacked                      |
-#   |                                 |
-#   |                                 |
-#   |                                 |
-#   |                2                |
-#   |                                 |
-#   |                                 |
-#   |                                 |
-#   |                                 |
-#   +---------------------------------+
+#   +----------------+----------------+
+#   |1,2 default     |                |
+#   |                |                |
+#   |                |                |
+#   |                |                |
+#   |        1       |       2        |
+#   |                |                |
+#   |                |                |
+#   |                |                |
+#   |                |                |
+#   +----------------+----------------+
 #                    |
 #                    |
 #                    | i3-programming
@@ -53,10 +53,7 @@
 #   |                |                |
 #   +----------------+----------------+
 
-i3-msg 'focus up                             ;
-        split v                              ;
-        focus down                           ;
-        move up                              ;
+i3-msg 'layout splitv                        ;
         resize shrink height 60 px or 15 ppt ;
         split h                              ;
         focus up                             ;
