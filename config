@@ -210,7 +210,6 @@ for_window [class="^URxvt$"    title="^battery-control$"        ] floating enabl
 for_window [                   title="^xzoom x"                 ] floating enable
 for_window [class="^Xfce4-notifyd$"                             ] floating enable
 for_window [class="^Xfce4-notifyd$"                             ] border none
-for_window [class="^Rox$"                                       ] floating enable
 for_window [class="^redeclipse$"                                ] floating enable
 for_window [class="^Chromium$" title="^MightyText Quick Reply$" ] floating enable
 for_window [class="^XDvi"                                       ] floating enable
