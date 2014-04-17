@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if command -v dmenu_path &> /dev/null; then
     exe=`dmenu_path | dmenu ${1+"$@"}` && exec i3-msg "exec $exe"
