@@ -179,7 +179,7 @@ bindsym $mod+Shift+s move workspace to output right
 
 # QUIRK: The ~/ is not working. Using the relative path as cwd is most
 # likely already there.
-bindsym $mod+Shift+n append_layout .i3/layouts/programming.json
+bindsym $mod+Shift+n exec --no-startup-id "ls ~/.i3/layouts/ | dmenu | xargs -I'{}' i3-msg 'append_layout .i3/layouts/{}'"
 
 bindsym $mod+n exec python ~/.i3/quickswitch-for-i3/quickswitch.py
 
