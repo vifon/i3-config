@@ -223,6 +223,7 @@ assign [class="^Steam$"] → steam
 # application launcher
 bindsym $mod+Control+o exec firefox
 bindsym $mod+Shift+o   exec --no-startup-id chromium
+bindsym $mod+Control+w exec luakit
 bindsym $mod+F8        exec thunderbird
 
 
