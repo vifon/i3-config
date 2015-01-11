@@ -207,6 +207,7 @@ bindsym $mod+Mod5+l resize shrink left  20 px or 5 ppt
 # window rules
 for_window [class="^Gitk$"                                      ] floating enable
 for_window [class="^URxvt$"    title="^ncmpcpp-run$"            ] floating enable
+for_window [class="^URxvt$"    title="^vimpc$"                  ] floating enable
 for_window [class="^URxvt$"    title="^youtube-run$"            ] floating enable
 for_window [class="^URxvt$"    title="^alsamixer$"              ] floating enable
 for_window [class="^URxvt$"    title="^battery-control$"        ] floating enable
