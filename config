@@ -181,8 +181,6 @@ bindsym $mod+Shift+s move workspace to output right
 # likely already there.
 bindsym $mod+Shift+n exec --no-startup-id "ls ~/.i3/layouts/ | dmenu | xargs -I'{}' i3-msg 'append_layout .i3/layouts/{}'"
 
-bindsym $mod+n exec python ~/.i3/quickswitch-for-i3/quickswitch.py
-
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
