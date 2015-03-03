@@ -181,6 +181,8 @@ bindsym $mod+Shift+s move workspace to output right
 # likely already there.
 bindsym $mod+Shift+n exec --no-startup-id "ls ~/.i3/layouts/ | dmenu | xargs -I'{}' i3-msg 'append_layout .i3/layouts/{}'"
 
+bindsym button3 floating toggle
+bindsym button2 move container right
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
