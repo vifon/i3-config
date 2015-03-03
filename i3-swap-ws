@@ -21,9 +21,9 @@ my $target = shift;
 my $focused = $i3->current_workspace->{name};
 die if not defined $focused;
 
-exec("i3-msg 'rename workspace $target    to VIFON_TEMP;
-              rename workspace $focused   to $target;
-              rename workspace VIFON_TEMP to $focused'");
+exec("i3-msg 'rename workspace \"$target\"  to VIFON_TEMP;
+              rename workspace \"$focused\" to \"$target\";
+              rename workspace VIFON_TEMP   to \"$focused\"'");
 
 =head1 NAME
 
