@@ -233,6 +233,7 @@ bindsym $mod+F8        exec thunderbird
 bar {
     status_command i3status
     position top
+    font xft:FontAwesome 11
     # mode hide
     modifier $mod
     tray_output primary
