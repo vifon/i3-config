@@ -173,12 +173,14 @@ bindsym $mod+Shift+w exec --no-startup-id i3-msg move container to workspace "`i
 
 bindsym $mod+Shift+equal move scratchpad
 bindsym $mod+equal       scratchpad show
+bindsym $mod+minus [title="IRC"] scratchpad show
+bindsym $mod+i [class="Emacs"] scratchpad show
 
 bindsym $mod+Shift+s move workspace to output right
 
 # QUIRK: The ~/ is not working. Using the relative path as cwd is most
 # likely already there.
-bindsym $mod+Shift+n exec --no-startup-id "ls ~/.i3/layouts/ | dmenu | xargs -I'{}' i3-msg 'append_layout .i3/layouts/{}'"
+bindsym $mod+Shift+i exec --no-startup-id "ls ~/.i3/layouts/ | dmenu | xargs -I'{}' i3-msg 'append_layout .i3/layouts/{}'"
 
 bindsym button3 floating toggle
 bindsym button2 move container right
